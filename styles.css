@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: "SST Light";
+    src: url(/fonts/sst-cufonfonts/SSTLight.TTF);
+}
+
+@font-face {
+    font-family: "SST Medium";
+    src: url(/fonts/sst-cufonfonts/SSTMedium.TTF);
+}
+
+@font-face {
+    font-family: "SST Bold";
+    src:url(/fonts/sst-cufonfonts/SSTBold.TTF);
+}
+
+:root{
+    --main-color:rgb(0,104,189,1);
+    --text-lightcolor1:#757575;
+    --main-lightfont:"SST Light";
+    --main-mediumfont:"SST Medium";
+    --main-boldfont:"SST Bold";
+    --psplus-menu-fontcolor:#1f1f1f;
+    --red-color:#D53B00;
+}
+
+.sony_bar{
+    width:100%;
+    height:38px;
+    background-color:black;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sony_bar img{
+    height:13px;
+    padding-right:10px;   
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_buttons{
+    padding-right:15px;
+    
+}
+
+.login_button {
+    align-items: center;
+    background-color: var(--main-color);
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: var(--main-mediumfont);
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    margin-right:30px;
+    min-height: 24px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+  }
+
+  .login_button:hover{
+    background-color: #004c8a;
+  }
+
+.nav_links{
+    display:flex;
+    flex-flow: row;
+    height:5vh;
+    align-items: center;
+    gap:10px;
+    padding-left:20px;
+    font-family:var(--main-lightfont);
+    color: var(--text-lightcolor1);
+    font-size:13px;
+}
+
+.fa-playstation{
+    color:var(--main-color);
+}
+
+.nav-psplus-logo{
+    height:30px;
+    padding-left:10px;
+}
+
+.nav-psplus-menu{
+    display:flex;
+    flex-flow: row;
+    gap:40px;
+    font-family: var(--main-boldfont);
+    color:var(--psplus-menu-fontcolor);
+}
+
+.psplus-nav{
+    height:8vh;
+    margin-right:13px;
+}
+
+.nav-psplus-button{
+  background: var(--red-color);
+  border-radius: 28px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--main-boldfont);
+  font-size:medium;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  text-underline-offset: 1px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  border: 0;
+}
