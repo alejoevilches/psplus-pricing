@@ -142,3 +142,10 @@ nav{
   width: 100%;
   border: 0;
 }
+
+.hero{
+    height:73vh;
+    width:100vw;
+    background-image:url(/img/hero-background.jpg);
+    background-size: cover;
+}
