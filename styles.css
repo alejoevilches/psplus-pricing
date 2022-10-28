@@ -19,14 +19,21 @@
     src:url(/fonts/sst-cufonfonts/SSTBold.TTF);
 }
 
+@font-face {
+    font-family: "SST Heavy";
+    src:url(/fonts/sst-cufonfonts/SSTHeavy.TTF);
+}
+
 :root{
     --main-color:rgb(0,104,189,1);
     --text-lightcolor1:#757575;
     --main-lightfont:"SST Light";
     --main-mediumfont:"SST Medium";
     --main-boldfont:"SST Bold";
+    --main-heavyfont:"SST Heavy";
     --psplus-menu-fontcolor:#1f1f1f;
     --red-color:#D53B00;
+    --background-graycolor:#cecdd2;
 }
 
 .sony_bar{
@@ -71,7 +78,7 @@ nav{
     line-height: 20px;
     max-width: 480px;
     margin-right:30px;
-    min-height: 24px;
+    min-height: 30px;
     min-width: 0px;
     overflow: hidden;
     padding: 0px;
@@ -148,4 +155,61 @@ nav{
     width:100vw;
     background-image:url(/img/hero-background.jpg);
     background-size: cover;
+    display:flex;
+    align-items: center;
+}
+
+.hero h1{
+    font-family:var(--main-lightfont);
+    font-size:50px;
+}
+
+.hero h3{
+    font-family:var(--main-lightfont);
+}
+
+.hero-container{
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+    margin-left:4vw;
+}
+
+.fit-button{
+    width:max-content;
+}
+
+.section-title{
+    font-family: var(--main-boldfont);
+    width:50vw;
+    text-align:center;
+    font-size:50px;
+    margin:0 auto;
+    padding-top:6vh;
+    line-height: 50px;
+}
+
+.section-text{
+    color:var(--text-lightcolor1);
+    margin:2vh auto 4vh;
+    text-align: center;
+    width:60vw;
+    font-size: 1rem;
+    font-family:var(--main-lightfont);
+    line-height:3vh;
+}
+
+.video-player{
+    border-radius:20px;
+    margin-top:7vh;
+}
+
+.video-container{
+    display:flex;
+    justify-content: center;
+    padding-bottom:5vh;
+}
+
+.cards{
+    background-color: var(--background-graycolor);
 }
