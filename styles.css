@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: "SST Regular";
+    src: url(/fonts/sst-cufonfonts/SSTRg.TTF);
+}
+
+@font-face {
     font-family: "SST Light";
     src: url(/fonts/sst-cufonfonts/SSTLight.TTF);
 }
@@ -31,9 +36,11 @@
     --main-mediumfont:"SST Medium";
     --main-boldfont:"SST Bold";
     --main-heavyfont:"SST Heavy";
+    --main-regularfont:"SST Regular";
     --psplus-menu-fontcolor:#1f1f1f;
     --red-color:#D53B00;
     --background-graycolor:#cecdd2;
+    --yellow-color:#fcc000;
 }
 
 .sony_bar{
@@ -212,4 +219,101 @@ nav{
 
 .cards{
     background-color: var(--background-graycolor);
+    height:max-content;
+    display:flex;
+    flex-direction: column;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    margin:5vh 15vw;
+    gap:20px;
+}
+
+.card{
+    height:max-content;
+    background-color:#F5F7FA;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(148, 147, 147);
+}
+
+.title-box{
+    width:90%;
+    height:max-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+    margin-top:10px;
+    border-radius:10px;
+    padding:15px 0 5px 10px;
+    box-shadow: 2px 3px 5px rgb(148, 147, 147);
+}
+
+.deluxe-title{
+    color:var(--yellow-color);
+    
+}
+
+.title-box h3{
+    font-family:var(--main-boldfont);
+    font-size:1.5rem;
+}
+
+.title-box p{
+    font-family:var(--main-lightfont);
+    font-size:0.9em;
+}
+
+.title-box h3:not(.deluxe-title){
+    color:black;
+}
+
+.title-box p:not(.deluxe-description){
+    color:black;
+}
+
+.extra-box{
+    background-color: var(--yellow-color);
+}
+
+.essential-box{
+    background-color:white;
+}
+
+.icon{
+    height:40px;
+    width:40px;
+}
+
+.card ul{
+    width:90%;
+    margin-top:10px;
+}
+
+.card li{
+    display:flex;
+    align-items: center;
+    justify-items: left;
+    font-family:var(--main-regularfont);
+    gap:10px;
+    padding-bottom:5px;
+}
+
+.card-bold{
+    font-family: var(--main-boldfont);
+}
+
+.card li:last-child{
+    padding-bottom:10px;
+}
+
+.cards button{
+    margin:0 auto;
+}
+
+.cards p{
+    padding-bottom:2vh;
 }
