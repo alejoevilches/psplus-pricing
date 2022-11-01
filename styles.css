@@ -569,13 +569,25 @@ footer i{
     }
 
     .section-title{
-        font-size: 1.3em;
         line-height: normal;
     }
 
     .section-text{
         font-size: 0.9;
         line-height: normal;
+    }
+
+    .game-frontpage{
+        height:150px;
+        width:150px;
+    }
+
+    .game-banner{
+        width:140px;
+    }
+
+    .game p{
+        font-size:0.8em;
     }
 }
 
