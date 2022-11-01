@@ -563,6 +563,10 @@ footer i{
     .links{
         height:100vh;
     }
+
+    .login_button{
+        font-size:0.7em;
+    }
 }
 
 @media screen and (max-width:400px){
