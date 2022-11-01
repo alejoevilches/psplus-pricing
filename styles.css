@@ -567,6 +567,16 @@ footer i{
     .login_button{
         font-size:0.7em;
     }
+
+    .section-title{
+        font-size: 1.3em;
+        line-height: normal;
+    }
+
+    .section-text{
+        font-size: 0.9;
+        line-height: normal;
+    }
 }
 
 @media screen and (max-width:400px){
