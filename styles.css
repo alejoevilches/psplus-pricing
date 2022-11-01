@@ -428,7 +428,6 @@ footer{
     font-size:15px;
     padding-top:5vh;
     padding-left:3vw;
-    height:55vh;
     display:flex;
     justify-content: space-between;
 }
@@ -457,7 +456,6 @@ footer i{
     flex-direction:row;
     align-items: center;
     margin-bottom:90px;
-    height:10vh;
 }
 
 .links ul{
@@ -544,6 +542,11 @@ footer i{
     footer{
         flex-direction: column;
     }
+
+    .links{
+        margin-top:30px;
+        margin-bottom:5vh;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -588,6 +591,16 @@ footer i{
 
     .game p{
         font-size:0.8em;
+    }
+
+    .links{
+        flex-direction:column;
+        align-items: flex-start;
+        height:fit-content;
+    }
+    
+    .links ul{
+        padding-right:10px;
     }
 }
 
