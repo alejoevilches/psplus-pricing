@@ -171,7 +171,7 @@ nav{
 
 .hero h1{
     font-family:var(--main-lightfont);
-    font-size:50px;
+    font-size:3.125em;
 }
 
 .hero h3{
@@ -193,7 +193,7 @@ nav{
     font-family: var(--main-boldfont);
     width:60vw;
     text-align:center;
-    font-size:50px;
+    font-size:3.125em;
     margin:0 auto;
     padding-top:6vh;
     line-height: 50px;
@@ -204,7 +204,7 @@ nav{
     margin:2vh auto 4vh;
     text-align: center;
     width:60vw;
-    font-size: 1rem;
+    font-size: 1em;
     font-family:var(--main-lightfont);
     line-height:3vh;
 }
@@ -212,6 +212,8 @@ nav{
 .video-player{
     border-radius:20px;
     margin-top:7vh;
+    width:850px;
+    height:415px;
 }
 
 .video-container{
@@ -396,11 +398,12 @@ nav{
 .disclaimers{
     margin-left:4vw;
     margin-top:7vh;
+    margin-right:3vw;
 }
 
 .disclaimer{
     font-family: var(--main-regularfont);
-    font-size:14px;
+    font-size:0.875em;
     margin-bottom:7vh;
 }
 
@@ -450,9 +453,11 @@ footer i{
 
 .links{
     display:flex;
+    flex-wrap: wrap;
     flex-direction:row;
     align-items: center;
     margin-bottom:90px;
+    height:10vh;
 }
 
 .links ul{
@@ -464,3 +469,104 @@ footer i{
     padding-bottom:10px;
 }
 
+@media screen and (max-width:1350px){
+    .nav-psplus-menu{
+        font-size:14px;
+    }
+
+    .nav-psplus-button{
+        padding:10px;
+    }
+
+    .section-title{
+        font-size:2.5em;
+    }
+
+    .video-player{
+        width:650px;
+        height:315px;
+    }
+
+    .hero h1{
+        font-size:2.5em;
+    }
+
+    .hero h3{
+        font-size:1em;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .nav-psplus-menu{
+        font-size:12px;
+    }
+
+    .nav-psplus-button{
+        padding:5px;
+        font-size:14px;
+    }
+
+    .disclaimer{
+        font-size:0.775em
+    }
+
+}
+
+@media screen and (max-width:850px){
+    .nav-psplus-menu{
+        display:none;
+    }
+
+    .nav_links p, .nav_links i:not(.fa-playstation){
+        display:none;
+    }
+
+    .section-title{
+        font-size:2em;
+    }
+
+    .video-player{
+        width:550px;
+        height:315px;
+    }
+
+    .gridcontainer{
+        grid-template-columns: 1fr;
+        gap:50px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+    .hero h1{
+        font-size:1.8em;
+    }
+
+    .hero h3{
+        font-size:1em;
+    }
+
+    .video-player{
+        width:350px;
+        height:315px;
+    }
+
+    .links{
+        height:100vh;
+    }
+}
+
+@media screen and (max-width:400px){
+    .hero{
+        height:40vh;
+    }
+}
